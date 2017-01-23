@@ -1,0 +1,20 @@
+{
+	"name":"recipie_name",
+	"type":"type of meal",
+	"ingredients":["list of ingredients"],
+	"prep_instructions":["list of instructions"],
+	"frequency":["frequency of eating"],
+	"date_last_eaten": "date",
+
+
+	"main":{
+		"protien":["Chicken","Sausage","Ham","Hamburger","Seafood","Any","Bacon",
+               "Steak","Pork","Beef","Chicken","Vegetarian","Lamb","Eat Out"],
+		"preferred_sides":["Side objects"]
+	},
+
+	"side":{},
+
+	"appetizer" :{},
+
+	"dessert": {},
