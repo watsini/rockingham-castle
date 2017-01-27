@@ -1,15 +1,16 @@
 import random
-from meals_db import db_meals_list
+from recipe_box_interface import import_mains_table
 from datetime import datetime
 
 DAYS = ['M', 'T', 'W', 'TH', 'F', 'S', 'SU']
 
 
 def menu_generator(weeks):
-    meal_list = db_meals_list()
+    meal_list = import_mains_table()
     last_week_menu = []
     for i in range(weeks):
         menu = []
+
         while len(menu) < 7:
 
             random_meal = random.choice(meal_list)
@@ -23,8 +24,7 @@ def menu_generator(weeks):
 
         print "Week {}: {}".format(i, [str(meal.name) for meal in menu])
 
-
-    last_week_menu = menu
+        last_week_menu = menu
 
 
 if __name__ == '__main__':
