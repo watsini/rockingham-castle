@@ -6,6 +6,7 @@ DAYS = ['M', 'T', 'W', 'TH', 'F', 'S', 'SU']
 
 
 def menu_generator(weeks):
+    """Doc String"""
     meal_list = import_mains_table()
     last_week_menu = []
     for i in range(weeks):
